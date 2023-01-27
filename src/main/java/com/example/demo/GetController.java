@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class NamesGetController { //何をGetするControllerかわかるように
+public class GetController {
 
-    @GetMapping("/names") //扱うリソースの複数形
+    @GetMapping("/read")
     public List<String> getNames() {
-        return List.of("mori", "kawano"); //"kawano"前のスペース
+        return List.of("mori","kawano");
     }
 }
